@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #474747;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 20px 0;
+}
+
+main {
+    padding: 45px;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.course {
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.course img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.course h3 {
+    color: #721e0f;
+}
+
+.course p {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #db7b3b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8b4d24;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, button {
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #courses {
+        width: 60%;
+    }
+
+    #enrollment {
+        width: 35%;
+    }
+}
+
+.enroll-text {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.enroll-text h2, .enroll-text h3 {
+    display: inline-block;
+    animation: moveUpDown 6s infinite alternate;
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+  
+  
+#commentBox {
+    background-color: #6c6e72;
+    border: 1px solid #db7b3b;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.comment {
+    margin-bottom: 20px;
+}
+.comment h3 {
+    margin-top: 0;
+}
+
+.comments-container {
+    text-align: center;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #474747;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@keyframes moveUpAndDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  p.moving {
+    animation: moveUpAndDown 2s infinite;
+  }

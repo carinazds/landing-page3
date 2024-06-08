@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos Gratuitos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Cursos Gratuitos</h1>
+        <p class="moving">Amplie seus conhecimentos sem gastar nada!</p>
+</header>
+
+<main>
+        <section id="courses">
+        <h2>Escolha o seu Curso</h2>
+        <div class="course">
+            <img src="infbasic.png" alt="Curso 1">
+            <h3>Curso de Informática Básica</h3>
+            <p>Aprenda os fundamentos da informática com este curso introdutório.</p>
+            <button onclick="enrollCourse('Informática Básica')">Inscrever-se</button>
+        </div>
+        <div class="course">
+            <img src="office.png" alt="Curso 2">
+            <h3>Curso de Pacote Office</h3>
+            <p>Aprimore suas habilidades e destaque-se no ambiente profissional.</p>
+            <button onclick="enrollCourse('Pacote Office')">Inscrever-se</button>
+        </div>
+    </section>
+
+    <section id="enrollment">
+        <div class="enroll-text">
+            <h2>Inscreva-se</h2>
+                    </div>
+                    <h3>e escolha seu curso profissional gratuitamente</h3>
+            
+        <form id="enrollmentForm" action="#" method="post">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Enviar Inscrição</button>
+        </form>
+    </section>
+</main>
+
+
+<div class="comments-container">
+    <h2>Depoimentos de nossos Alunos</h2>
+    <div id="commentBox">
+        <div class="comment">
+            <h3>Felipe:</h3> 
+            <p>Realmente, ter conhecimento em informática é crucial nos dias de hoje. Esses cursos gratuitos são uma ótima oportunidade para aprender.</p>
+        </div>
+        <div class="comment">
+            <h3>Maria Luiza:</h3>
+            <p>Eu fiz um curso de Pacote Office e isso me ajudou muito a conseguir um emprego. Recomendo!</p>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+     &copy; 2024 Cursos Gratuitos
+    </footer>
+
+    
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
